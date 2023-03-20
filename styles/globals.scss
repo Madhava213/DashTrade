@@ -1,0 +1,507 @@
+html,
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: Hauora;
+    scroll-behavior: smooth !important;
+    scrollbar-color: rgb(29, 29, 29) rgb(32, 32, 32) !important;
+    height: 100vh;
+    overflow-x: hidden;
+	cursor:default;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+option{
+    padding: 0.3em;
+    border: none;
+    align-items: center;
+}
+
+.unreset{
+	
+	html {
+		box-sizing: content-box;
+	}
+	
+	body {
+		margin: 8px;
+		line-height: normal;
+	}
+	
+	p {
+		margin: 1em 0;
+	}
+	
+	blockquote,
+	figure {
+		margin: 1em 40px;
+	}
+	
+	q {
+		quotes: "“" "”" "‘" "’";
+	
+		&:before {
+			content: open-quote;
+		}
+	
+		&:after {
+			content: close-quote;
+		}
+	}
+	
+	hr {
+		border: 1px inset;
+		box-sizing: border-box;
+		margin: 0.5em auto;
+	}
+	
+	h1 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+		margin: 0.83em 0;
+	}
+	
+	h3 {
+		font-size: 1.17em;
+		margin: 1em 0;
+	}
+	
+	h4 {
+		font-size: 1.00em;
+		margin: 1.33em 0;
+	}
+	
+	h5 {
+		font-size: 0.83em;
+		margin: 1.67em 0;
+	}
+	
+	h6 {
+		font-size: 0.67em;
+		margin: 2.33em 0;
+	}
+	
+	article, aside, nav, section {
+	
+		h1 {
+			font-size: 1.5em;
+			font-weight: bold;
+			margin: 0.83em 0;
+		}
+	
+		article, aside, nav, section {
+		
+			h1 {
+				font-size: 1.17em;
+				font-weight: bold;
+				margin: 1em 0;
+			}
+		
+			article, aside, nav, section {
+			
+				h1 {
+					font-size: 1.00em;
+					font-weight: bold;
+					margin: 1.33em 0;
+				}
+			
+				article, aside, nav, section {
+				
+					h1 {
+						font-size: 0.83em;
+						font-weight: bold;
+						margin: 1.67em 0;
+					}
+				
+					article, aside, nav, section {
+					
+						h1 {
+							font-size: 0.67em;
+							font-weight: bold;
+							margin: 2.33em 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	table {
+		border-collapse: separate;
+		border-spacing: 2px;
+		border-color: gray;
+	}
+	
+	thead,
+	tbody,
+	tfoot,
+	tr {
+		border-color: inherit;
+		vertical-align: middle;
+	}
+	
+	td, th {
+		padding: 1px;
+		vertical-align: inherit;
+	}
+	
+	th {
+		font-weight: bold
+	}
+	
+	caption {
+		text-align: center;
+	}
+	
+	ul, menu {
+		list-style-type: disc;
+		margin: 1em 0;
+		padding: 0 0 0 40px;
+	}
+	
+	ol {
+		list-style-type: decimal;
+		margin: 1em 0;
+		padding: 0 0 0 40px;
+	}
+	
+	ul, ol {
+	
+		ul {
+			list-style-type: circle;
+		}
+	
+		ul, ol {
+		
+			ul {
+				list-style-type: square;
+			}
+		}
+	}
+	
+	dd {
+		margin: 0 0 0 40px;
+	}
+	
+	dl {
+		margin: 1em 0;
+	}
+	
+	ul, ol, menu, dl {
+	
+		ul, ol, menu, dl {
+			margin: 0;
+		}
+	}
+	
+	legend {
+		padding: 0 2px;
+	}
+	
+	fieldset {
+		border-style: groove;
+		border-width: 2px;
+		border: 2px groove ThreeDFace;
+		margin: 0 2px;
+		padding: 0 2px 3px;
+		-webkit-padding-before: 0.35em;
+		-webkit-padding-start: 0.75em;
+		-webkit-padding-end: 0.75em;
+		-webkit-padding-after: 0.625em;
+	}
+	
+	ins {
+		background-color: transparent;
+		font-weight: inherit;
+		text-decoration: underline;
+	}
+	
+	b, strong {
+		font-weight: bold;
+	}
+	
+	i, cite, em, var, address, dfn {
+		font-style: italic;
+		font-weight: inherit;
+	}
+	
+	abbr[title], dfn[title] {
+		border-bottom: 0;
+		cursor: default;
+		font-weight: inherit;
+	}
+	
+	tt, code, kbd, samp {
+		font-family: monospace;
+		font-weight: inherit;
+	}
+	
+	pre {
+		font-family: monospace;
+		margin: 1em 0;
+		white-space: pre;
+	}
+	
+	mark {
+		background-color: yellow;
+		color: black;
+		font-style: normal;
+		font-weight: inherit;
+	}
+	
+	big {
+		font-size: larger;
+		font-weight: inherit;
+	}
+	
+	small {
+		font-size: smaller;
+		font-weight: inherit;
+	}
+	
+	sub, sup {
+		font-weight: inherit;
+		line-height: inherit;
+		position: static;
+	}
+	
+	sub {
+		font-size: smaller;
+		bottom: 0;
+		vertical-align: sub;
+	}
+	
+	sup {
+		font-size: smaller;
+		top: 0;
+		vertical-align: super;
+	}
+	
+	ruby {
+	
+		> rt {
+			font-size: 50%;
+		}
+	}
+	
+	iframe {
+		border: 2px inset;
+	}
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(46, 46, 46);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 52, 89, 1);
+}
+
+::-webkit-scrollbar-track-piece {
+    background: rgb(211, 211, 211);
+}
+
+// FONTS ##################
+@font-face {
+    font-family: 'Hauora';
+    src: local('Hauora ExtraBold'), local('Hauora-ExtraBold'),
+        url('../fonts/Hauora-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hauora';
+    src: local('Hauora Bold'), local('Hauora-Bold'),
+        url('../fonts/Hauora-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hauora';
+    src: local('Hauora ExtraLight'), local('Hauora-ExtraLight'),
+        url('../fonts/Hauora-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hauora';
+    src: local('Hauora Regular'), local('Hauora-Regular'),
+        url('../fonts/Hauora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hauora';
+    src: local('Hauora SemiBold'), local('Hauora-SemiBold'),
+        url('../fonts/Hauora-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hauora';
+    src: local('Hauora Medium'), local('Hauora-Medium'),
+        url('../fonts/Hauora-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hauora';
+    src: local('Hauora Light'), local('Hauora-Light'),
+        url('../fonts/Hauora-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Merienda One";
+    src: local("Merienda One"), local("MeriendaOne-Regular"),
+        url("../fonts/MeriendaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: local("Righteous"), local("Righteous-Regular"),
+        url("../fonts/Righteous-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aleo";
+    src: local("Aleo Bold"), local("Aleo-Bold"),
+        url("../fonts/Aleo-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aleo";
+    src: local("Aleo Italic"), local("Aleo-Italic"),
+        url("../fonts/Aleo-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aleo";
+    src: local("Aleo Bold Italic"), local("Aleo-BoldItalic"),
+        url("../fonts/Aleo-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aleo";
+    src: local("Aleo Light Italic"), local("Aleo-LightItalic"),
+        url("../fonts/Aleo-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aleo";
+    src: local("Aleo Light"), local("Aleo-Light"),
+        url("../fonts/Aleo-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aleo";
+    src: local("Aleo Regular"), local("Aleo-Regular"),
+        url("../fonts/Aleo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Regular"),
+        url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat-Bold"),
+        url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Regular"), local("Oswald-Regular"),
+        url("../fonts/Oswald-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Bold"), local("Oswald-Bold"),
+        url("../fonts/Oswald-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: local("Oswald Light"), local("Oswald-Light"),
+        url("../fonts/Oswald-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
