@@ -50,20 +50,26 @@ const Home = ({ broadData, sectoralData }) => {
       const data = [];
       const colors = [];
       const dataset = item === "broadVal" ? [...broadVal] : [...sectorVal];
+      dataset.sort((a, b) => a.priceChangePercent - b.priceChangePercent);
       dataset.forEach((indexData) => {
          labels.push(indexData.name);
          data.push(parseFloat(indexData.priceChangePercent));
          colors.push(indexData.priceChangePercent < 0 ? "#FEB2B2" : "#9AE6B4");
       });
       return (
-         <Box width="50%" justifyContent="center" alignItems="center">
+         <Flex
+            width={{ base: "100%", md: "50%" }}
+            height={{ base: "30vh", md: "max-content" }}
+            justifyContent="center"
+            alignItems="center"
+         >
             <Bar
                data={{
                   labels,
                   datasets: [{ data, backgroundColor: colors }],
                }}
                options={{
-                  responsive: true,
+                  indexAxis: "y",
                   plugins: {
                      legend: {
                         display: false,
@@ -75,7 +81,7 @@ const Home = ({ broadData, sectoralData }) => {
                   },
                }}
             />
-         </Box>
+         </Flex>
       );
    }
 
